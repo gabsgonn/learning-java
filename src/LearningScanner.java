@@ -26,5 +26,7 @@ public class LearningScanner {
         //Constructs a message using the input values (name, age and food)
         System.out.println("Hello "+name+", you are "+age+" years old. " +
                 "You like "+food+".");
+
+        scanner.close();
     }
 }
