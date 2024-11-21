@@ -1,3 +1,5 @@
+// CÓPIA DO REPOSITÓRIO EXEMPLOS EBAC
+
 public class OperadoresAritimeticos {
 
     public static void main(String[] args) {
