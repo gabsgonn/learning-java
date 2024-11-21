@@ -1,4 +1,4 @@
-/*
+package operadores;/*
 ### **5. Função para Calcular o Fatorial de um Número**
 Implemente uma função chamada `calcularFatorial` que receba um número inteiro positivo e retorne o fatorial desse número. O fatorial de `n` é calculado como `n! = n * (n-1) * (n-2) * ... * 1`.
 */

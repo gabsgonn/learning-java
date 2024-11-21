@@ -1,4 +1,4 @@
-/*
+package operadores;/*
 ### **3. Função para Calcular a Média de Três Números**
 Escreva uma função chamada `calcularMedia` que receba três números
 decimais como parâmetros e retorne a média deles.*/

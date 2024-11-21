@@ -1,0 +1,142 @@
+Números pares
+
+Números pares são aqueles números que retornam zero como resto quando são divididos por 2. Portanto, podemos concluir que todos os números que terminam em 0, 2, 4, 6 e 8 são certamente divisíveis por 2 e, portanto, são chamados de números pares. .
+
+Números ímpares
+
+Quando um determinado número não é divisível por 2 e deixa resto 1, o número é conhecido como número ímpar. Portanto, podemos concluir que todos os números que terminam em 1, 3, 5, 7 e 9 são números ímpares.
+
+Nota: Se todos os números inteiros são um conjunto universal e 'Par' é um conjunto de todos os números pares no conjunto universal, Ímpar pode ser pensado como uma subtração intuitiva do conjunto Par do conjunto universal.
+
+Ilustração Genérica Usando Exemplos
+Entrada: 13
+Saída: ODD
+
+Entrada: 24
+Saída: EVEN
+
+Programa Java para verificar números pares ou ímpares
+Existem várias maneiras de verificar se um número é par ou ímpar, e as metodologias estão listadas abaixo:
+
+Usando Força Bruta - Abordagem Ingênua
+Usando OU bit a bit
+Usando bit a bit AND
+Usando Bitwise XOR
+Usando BruteForce – Abordagem Ingênua
+Esta é a versão simplista de verificar se um número é par ou ímpar. Isso é feito dividindo o número por 2 e verificando o restante. Se o resto for 0, é um número par, enquanto o resto são números ímpares.
+
+importar java.io.*; 
+importar java.util.Scanner; 
+
+classe Demonstração 
+
+public static void main (String args []) { 
+
+    int num = 10;
+
+    if (num % 2 == 0) { 
+
+        System.out.println (“Número inserido se par”); } 
+
+    else { System.out.println (“O número digitado é ímpar”); }
+  } 
+}
+ 
+
+SAÍDA
+Número digitado é par
+
+ 
+
+Operadores bit a bit
+Atualmente, os operadores bit a bit são uma maneira eficiente de determinar se um número é par ou ímpar. Os três operadores Bitwise que podem ser usados ​​neste processo são Bitwise OR, Bitwise AND e Bitwise XOR.
+
+Usando OU bit a bit
+As operações OR bit a bit de um número par obterão o número incrementado em 1. No caso de ímpar, ele permanece inalterado.
+
+Ilustração do OU bit a bit:
+
+Caso 1:
+
+Número = 12 = 1100 – Representação de 12 em binário
+Bitwise OR = 0001 – Representação de 1 em binário
+Soma bit a bit = 1101 – Representação de 13 em binário
+
+Resultado – O número era ainda próximo, então OR bit a bit em 1 incrementa o valor de 1.
+
+Caso 2:
+
+Número = 15 = 1111 – Representação de 15 em binário
+Bitwise OR = 0001 – Representação de 1 em binário
+Soma bit a bit = 1111 – Representação de 15 em binário
+
+Resultado – O número era par, portanto, 'OU bit a bit' em 1 incrementa o valor de 1.
+
+Exemplo de código usando OR bit a bit
+
+importar java.util.*; classe pública Demo { public static void main (String args []) { int n = 100; if (n | 1) > n { System.out.println (“Número é par”); } else { System.out.println (“Número é ímpar”); } } }
+ 
+
+SAÍDA
+
+O número é par
+
+Usando bit a bit AND
+A operação AND bit a bit de um número ímpar sempre será igual a 1 porque o último bit já estará definido. No caso de um número Par, dará 0 como saída.
+
+Caso 1:
+
+Número = 5 = 0101 – Representação de 5 em binário
+Bitwise OR = 0001 – Representação de 1 em binário
+Soma bit a bit = 101 – Representação de Soma em binário
+
+Resultado – O número era ímpar, então bit a bit AND por 1 é 1.
+
+Caso 2:
+
+Número = 8 = 1000 – Representação de 8 em binário
+Bitwise OR = 0001 – Representação de 1 em binário
+Soma bit a bit = 0000 – Representação de 0 em binário
+
+Resultado – O número era par, então 'bitwise AND' por 1 define o último dígito como 0.
+
+Código de exemplo
+
+importar java.util.*; classe pública Demo { public static void main (String args []) { int n = 91; if ((n & 1) == 1) { System.out.println (“Número é ímpar”); } else { System.out.println (“Número é par”); } } }
+ 
+
+SAÍDA
+
+Número é ímpar
+
+Usando Bitwise XOR
+A operação XOR bit a bit de um número par obtém o número incrementado em 1. No caso de um número ímpar, obtém o número decrementado em 1.
+
+É a abordagem recomendada.
+
+A ilustração segue o padrão abaixo:
+
+Caso 1:
+
+Número = 5 = 0101 – Representação de 5 em binário
+Bitwise XOR = 0001 – Representação de 1 em binário
+Soma bit a bit = 1101 – Representação de 4 em binário
+
+Resultado – O número era ímpar, então 'bitwise AND' em 1 diminui o valor de 1.
+
+Caso 2:
+
+Número = 8 = 1000 – Representação de 8 em binário
+Bitwise XOR = 0001 – Representação de 1 em binário
+Soma bit a bit = 1101 – Representação de 13 em binário
+
+Resultado – O número foi ainda 'bitwise AND' em 1 incremento do valor de 1.
+
+Código de exemplo
+
+importar java.util.*; classe pública Demo { public static void main (String args []) { int num = 99; if ((num ^ 1) == num + 1) { System.out.println (“Número é par”); } else { System.out.println (“Número é ímpar”); } } }
+ 
+
+SAÍDA
+
+Número é ímpar

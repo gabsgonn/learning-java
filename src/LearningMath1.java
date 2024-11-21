@@ -74,7 +74,7 @@ public class LearningMath1 {
         System.out.println("Enter side y: ");
         y = scanner.nextDouble();
         
-        z = Math.sqrt((x*x)+(y*y));
+        z = ((x*x)+(y*y));
         
         System.out.println("The hypotenuse is: " + z);
 

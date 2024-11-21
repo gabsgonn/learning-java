@@ -1,0 +1,41 @@
+Claro! Aqui estão 5 exercícios básicos para praticar e entender o uso de funções em Java:
+
+---
+
+### **1. Função para Calcular o Dobro de um Número**
+Crie uma função chamada `calcularDobro` que receba um número inteiro como parâmetro e retorne o dobro desse número. Teste a função chamando-a no método `main`.
+
+CalcularDobro
+
+---
+
+### **2. Função para Verificar se um Número é Par ou Ímpar**
+Implemente uma função chamada `ehPar` que receba um número inteiro e retorne `true` se ele for par, ou `false` caso contrário. Use essa função para imprimir uma mensagem no método `main`.
+
+ParImpar
+
+---
+
+### **3. Função para Calcular a Média de Três Números**
+Escreva uma função chamada `calcularMedia` que receba três números decimais como parâmetros e retorne a média deles. No método `main`, chame essa função e exiba o resultado.
+
+CalcularMedia
+
+---
+
+### **4. Função para Verificar se uma Palavra é Palíndroma**
+Crie uma função chamada `ehPalindromo` que receba uma palavra (do tipo `String`) e retorne `true` se for um palíndromo, ou `false` caso contrário. Um palíndromo é uma palavra que pode ser lida da mesma forma de trás para frente (exemplo: "arara").
+
+
+não sei fazer
+
+---
+
+### **5. Função para Calcular o Fatorial de um Número**
+Implemente uma função chamada `calcularFatorial` que receba um número inteiro positivo e retorne o fatorial desse número. O fatorial de `n` é calculado como `n! = n * (n-1) * (n-2) * ... * 1`.
+
+Fatorial
+
+---
+
+Quando terminar de resolver, envie suas soluções para que eu possa corrigir e discutir com você! 😊

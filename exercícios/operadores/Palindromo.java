@@ -1,4 +1,4 @@
-// ** AJUDA DO GPT **
+package operadores;// ** AJUDA DO GPT **
 /* 1. Função para Calcular o Dobro de um Número
 Crie uma função chamada `calcularDobro` que receba um número inteiro como parâmetro e retorne o dobro desse número. Teste a função chamando-a no método `main`.*/
 
@@ -32,7 +32,6 @@ public class Palindromo {
         }
 
         JOptionPane.showMessageDialog(null,  "Yes, this word is a Palindromo:\n"+palavra);
-
         return true;
 
     }
